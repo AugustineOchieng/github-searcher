@@ -1,0 +1,21 @@
+<div class="hero">
+
+
+     <div class="hero-slide">
+          <div class="img overlay" style="background-image: url('../assets/images/hero_bg_1.jpg')"></div>
+         
+     </div>
+     <div class="container">
+          <div class="row justify-content-center align-items-center">
+               <div class="col-lg-9 text-center">
+                    <h1 class="heading">Easiest way to find a Github profile</h1>
+                    <form  [formGroup]="searchform" (ngSubmit)="sendUser()" class="narrow-w form-search d-flex align-items-stretch mb-3"  >
+                         
+                         <input type="text" class="form-control px-4" placeholder="Enter Github username. e.g. WilliamOtieno" id=""   formControlName="username">
+                         <button type="button" class="btn btn-primary" (click)="sendUser()"  [routerLink]="['searchuser']">getDetails</button>
+
+                    </form>
+               </div>
+          </div>
+     </div>
+</div>
